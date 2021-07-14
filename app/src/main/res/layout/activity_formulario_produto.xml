@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.activity.FormularioProdutoActivity">
+
+        <EditText
+            android:id="@+id/campoProdutoNome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:ems="10"
+            android:hint="Nome"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/campoProdutoDescricao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:ems="10"
+            android:hint="Descrição"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/campoProdutoNome" />
+
+        <EditText
+            android:id="@+id/campoProdutoValor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:ems="10"
+            android:hint="Valor"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/campoProdutoDescricao" />
+
+        <Button
+            android:id="@+id/formProdutoButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="Adicionar"
+            app:cornerRadius="0dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/campoProdutoValor"
+            app:layout_constraintVertical_bias="1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
